@@ -1,0 +1,10 @@
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.Form1.resources
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.Properties.Resources.resources
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.csproj.GenerateResource.cache
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.csproj.CoreCompileInputs.cache
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\bin\Debug\TimeoutBeater.exe.config
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\bin\Debug\TimeoutBeater.exe
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\bin\Debug\TimeoutBeater.pdb
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.exe
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.pdb
+C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.csprojResolveAssemblyReference.cache
