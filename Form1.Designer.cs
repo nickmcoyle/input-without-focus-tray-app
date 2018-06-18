@@ -28,26 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.processesBox = new System.Windows.Forms.CheckedListBox();
+            this.ProcessEnabledCheckBox = new System.Windows.Forms.CheckBox();
+            this.ProcessNameTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // ProcessEnabledCheckBox
             // 
-            this.button1.Location = new System.Drawing.Point(343, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Restore Defaults";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ProcessEnabledCheckBox.AutoSize = true;
+            this.ProcessEnabledCheckBox.Location = new System.Drawing.Point(145, 19);
+            this.ProcessEnabledCheckBox.Name = "ProcessEnabledCheckBox";
+            this.ProcessEnabledCheckBox.Size = new System.Drawing.Size(65, 17);
+            this.ProcessEnabledCheckBox.TabIndex = 0;
+            this.ProcessEnabledCheckBox.Text = "Enabled";
+            this.ProcessEnabledCheckBox.UseVisualStyleBackColor = true;
             // 
-            // processesBox
+            // ProcessNameTextBox
             // 
-            this.processesBox.FormattingEnabled = true;
-            this.processesBox.Location = new System.Drawing.Point(165, 358);
-            this.processesBox.Name = "processesBox";
-            this.processesBox.Size = new System.Drawing.Size(120, 94);
-            this.processesBox.TabIndex = 2;
+            this.ProcessNameTextBox.Location = new System.Drawing.Point(9, 16);
+            this.ProcessNameTextBox.Name = "ProcessNameTextBox";
+            this.ProcessNameTextBox.Size = new System.Drawing.Size(93, 20);
+            this.ProcessNameTextBox.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 18);
+            this.label2.MaximumSize = new System.Drawing.Size(220, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 26);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "This application will receive a keypress every 5 mins to prevent it from logging " +
+    "you out.";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(95, 129);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(65, 27);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(166, 129);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(65, 28);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ProcessNameTextBox);
+            this.groupBox1.Controls.Add(this.ProcessEnabledCheckBox);
+            this.groupBox1.Location = new System.Drawing.Point(15, 61);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(216, 51);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Process Name";
             // 
             // Form1
             // 
@@ -55,19 +102,27 @@
             this.AccessibleName = "Settings";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 486);
-            this.Controls.Add(this.processesBox);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(259, 180);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.label2);
             this.Name = "Form1";
             this.Text = "Settings";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
-        #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox processesBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        #endregion        
+        private System.Windows.Forms.CheckBox ProcessEnabledCheckBox;
+        private System.Windows.Forms.TextBox ProcessNameTextBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

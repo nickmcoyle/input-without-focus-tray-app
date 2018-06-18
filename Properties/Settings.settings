@@ -2,32 +2,17 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TimeoutBeater.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="ProcessNames" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;EMC64&lt;/string&gt;
-  &lt;string&gt;wfica32&lt;/string&gt;
-  &lt;string&gt;notepad&lt;/string&gt;
-  &lt;string&gt;notepad++&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+    <Setting Name="ProcessKeyPress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">F3</Value>
     </Setting>
-    <Setting Name="ProcessKeyPresses" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;F3&lt;/string&gt;
-  &lt;string&gt;F1&lt;/string&gt;
-  &lt;string&gt;F5&lt;/string&gt;
-  &lt;string&gt;F5&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+    <Setting Name="ProcessEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="ProcessEnabled" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;false&lt;/string&gt;
-  &lt;string&gt;false&lt;/string&gt;
-  &lt;string&gt;true&lt;/string&gt;
-  &lt;string&gt;true&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+    <Setting Name="Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">EMC64</Value>
+    </Setting>
+    <Setting Name="Interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300000</Value>
     </Setting>
   </Settings>
 </SettingsFile>

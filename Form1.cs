@@ -42,138 +42,34 @@ namespace TimeoutBeater
         public Form1()
         {
             InitializeComponent();
-            this.Load += new System.EventHandler(EnumsAndComboBox_Load);
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+            this.Load += new System.EventHandler(Fields_Load);
+        }         
+       
+        private void Fields_Load(object sender, System.EventArgs e)
         {
-            if (TimeoutBeater.Program.enabled)
-            {
-                TimeoutBeater.Program.enabled = false;
-            } else
-            {
-                TimeoutBeater.Program.enabled = true;
-            }
-        }
+            ProcessNameTextBox.Text = Properties.Settings.Default.Name;
+            //var processKeyPress = Properties.Settings.Default.ProcessKeyPress;
+            ProcessEnabledCheckBox.Checked = Properties.Settings.Default.ProcessEnabled;                            
+        }       
+       
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void EnumsAndComboBox_Load(object sender, System.EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            // Add data to the List
-            var processNames = Properties.Settings.Default.ProcessNames;
-            var processKeyPresses = Properties.Settings.Default.ProcessKeyPresses;
-            var processEnabled = Properties.Settings.Default.ProcessEnabled;
-
-            for (int i = 0; i < processNames.Count; ++i)
-            {
-                var processName = processNames[i];
-                var keyPress = processKeyPresses[i];
-                var isEnabled = processEnabled[i] == "true";
-                //bindingSource1.Add(new Process(processName, TimeoutBeater.KeyPresses.F5 , isEnabled));
-                bindingSource1.Add(new Process(processName, isEnabled));
-            }
-           
-            // Initialize the DataGridView.
-            dataGridView2.AutoGenerateColumns = false;
-            dataGridView2.AutoSize = true;
-            dataGridView2.DataSource = bindingSource1;
-
-            
-
-            // Initialize and add a text box column.
-            DataGridViewColumn column = new DataGridViewTextBoxColumn();
-            column.DataPropertyName = "Name";
-            column.Name = "ProcName";
-            dataGridView2.Columns.Add(column);
-                       
-            //dataGridView2.Columns.Add(CreateComboBoxWithEnums());         
-            
-            // Initialize and add a checkbox column. 
-            column = new DataGridViewCheckBoxColumn();
-            column.DataPropertyName = "Enabled";
-            column.Name = "Enabled";
-            dataGridView2.Columns.Add(column);
-
-            // Initialize the form.
-            this.Controls.Add(dataGridView2);
-            this.AutoSize = true;
-            this.Text = "DataGridView object binding demo";
+            SaveSettings();
         }
 
-        DataGridViewComboBoxColumn CreateComboBoxWithEnums()
-        {            
-            DataGridViewComboBoxColumn combo = new DataGridViewComboBoxColumn();
-            combo.DataSource = Enum.GetValues(typeof(KeyPresses));
-            combo.DataPropertyName = "KeyPress";
-            combo.Name = "KeyPress";
-            return combo;            
-        }
-
-        #region "business object"
-        private class Process
+        public void SaveSettings()
         {
-            private string myName;            
-           // private string myKeyPress;
-            private bool isEnabled;
-
-           // public Process(string name,string keyPress, bool enabled)
-            public Process(string name, bool enabled)
-            {
-                myName = name;
-                //myKeyPress = keyPress;
-                isEnabled = enabled;
-            }
-
-            public Process()
-            {
-                myName = "<enter name>";
-               // myKeyPress = KeyPress.F5;                
-                isEnabled = true;
-            }
-
-            public string Name
-            {
-                get
-                {
-                    return myName;
-                }
-
-                set
-                {
-                    myName = value;
-                }
-            }
-
-            public bool IsEnabled
-            {
-                get
-                {
-                    return IsEnabled;
-                }
-                set
-                {
-                    IsEnabled = value;
-                }
-            }
-            /*
-            public string KeyPress
-            {
-                get
-                {
-                    return myKeyPress;
-                }
-                set
-                {
-                    myKeyPress = value;
-                }
-            }
-            */
+            Properties.Settings.Default.Name = this.ProcessNameTextBox.Text;
+            //Properties.Settings.Default.ProcessKeyPress = TimeoutBeater.Program.processKeyPress;
+            Properties.Settings.Default.ProcessEnabled = this.ProcessEnabledCheckBox.Checked;
+            Properties.Settings.Default.Save();
+            this.Close();
         }
-        #endregion
-
     }
 }

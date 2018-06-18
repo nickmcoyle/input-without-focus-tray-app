@@ -25,55 +25,49 @@ namespace TimeoutBeater.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>EMC64</string>
-  <string>wfica32</string>
-  <string>notepad</string>
-  <string>notepad++</string>
-</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection ProcessNames {
+        [global::System.Configuration.DefaultSettingValueAttribute("F3")]
+        public string ProcessKeyPress {
             get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["ProcessNames"]));
+                return ((string)(this["ProcessKeyPress"]));
             }
             set {
-                this["ProcessNames"] = value;
+                this["ProcessKeyPress"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>F3</string>
-  <string>F1</string>
-  <string>F5</string>
-  <string>F5</string>
-</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection ProcessKeyPresses {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ProcessEnabled {
             get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["ProcessKeyPresses"]));
-            }
-            set {
-                this["ProcessKeyPresses"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>false</string>
-  <string>false</string>
-  <string>true</string>
-  <string>true</string>
-</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection ProcessEnabled {
-            get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["ProcessEnabled"]));
+                return ((bool)(this["ProcessEnabled"]));
             }
             set {
                 this["ProcessEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("EMC64")]
+        public string Name {
+            get {
+                return ((string)(this["Name"]));
+            }
+            set {
+                this["Name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300000")]
+        public int Interval {
+            get {
+                return ((int)(this["Interval"]));
+            }
+            set {
+                this["Interval"] = value;
             }
         }
     }
