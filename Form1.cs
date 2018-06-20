@@ -71,5 +71,6 @@ namespace TimeoutBeater
             Properties.Settings.Default.Save();
             this.Close();
         }
+       
     }
 }

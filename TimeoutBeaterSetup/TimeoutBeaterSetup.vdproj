@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_2DF9890950B34890B1529123926A669B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5B06387297DE4195B92D9648EB8E19C9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5C8ECCA6CF8473DA22C7D14EB2CFCA09"
         "OwnerKey" = "8:_8C2A739A13A8492184672A2A908D9672"
         "MsmSig" = "8:_UNDEFINED"
@@ -22,12 +34,6 @@
         "Entry"
         {
         "MsmKey" = "8:_8C2A739A13A8492184672A2A908D9672"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_DE832AFEDFEB46C294B6C6592F99B5F5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -138,6 +144,46 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2DF9890950B34890B1529123926A669B"
+            {
+            "SourcePath" = "8:..\\Readme.txt"
+            "TargetName" = "8:Readme.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B8C34757045B4FA6A762E27F7FB43C0A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5B06387297DE4195B92D9648EB8E19C9"
+            {
+            "SourcePath" = "8:..\\hourglass.ico"
+            "TargetName" = "8:hourglass.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_B8C34757045B4FA6A762E27F7FB43C0A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5C8ECCA6CF8473DA22C7D14EB2CFCA09"
             {
             "AssemblyRegister" = "3:1"
@@ -145,6 +191,11 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
+                    "_5C8ECCA6CF8473DA22C7D14EB2CFCA09"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
@@ -162,26 +213,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DE832AFEDFEB46C294B6C6592F99B5F5"
-            {
-            "SourcePath" = "8:..\\TimeoutBeaterTrayApp\\Readme.txt"
-            "TargetName" = "8:Readme.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_B8C34757045B4FA6A762E27F7FB43C0A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -214,7 +245,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_B8C34757045B4FA6A762E27F7FB43C0A"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -252,7 +283,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Timeout Beater"
         "ProductCode" = "8:{58608B44-FAA2-4665-8F60-590C40D2279D}"
-        "PackageCode" = "8:{B79FB73D-DB67-40CF-BCAB-0B8F9073AFDE}"
+        "PackageCode" = "8:{4CF346BB-99C6-4727-94D1-001D3BC89A17}"
         "UpgradeCode" = "8:{6B468E67-FBD0-46EF-9752-E12FF1A4D393}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -384,6 +415,20 @@
             "Folder" = "8:_8A356FA98DEA44EB90CA9B76DB6CB874"
             "WorkingFolder" = "8:_B8C34757045B4FA6A762E27F7FB43C0A"
             "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_34093704BF8B4A9DBF82A3160C38B2CF"
+            {
+            "Name" = "8:TimeoutBeater Shortcut"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_8C2A739A13A8492184672A2A908D9672"
+            "Folder" = "8:_1DA38D605A4340C38BCCA7C21C7A9D87"
+            "WorkingFolder" = "8:_B8C34757045B4FA6A762E27F7FB43C0A"
+            "Icon" = "8:_5B06387297DE4195B92D9648EB8E19C9"
             "Feature" = "8:"
             }
         }

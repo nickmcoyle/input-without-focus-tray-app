@@ -8,3 +8,12 @@ C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.cs
 C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.exe
 C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.pdb
 C:\Users\Nick Coyle\source\repos\TimeoutBeaterTrayApp\obj\Debug\TimeoutBeater.csprojResolveAssemblyReference.cache
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\bin\Debug\TimeoutBeater.exe.config
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\bin\Debug\TimeoutBeater.exe
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\bin\Debug\TimeoutBeater.pdb
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.Form1.resources
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.Properties.Resources.resources
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.csproj.GenerateResource.Cache
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.csproj.CoreCompileInputs.cache
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.exe
+C:\Users\ncoyle\source\repos\InputWithoutFocusTrayApp\obj\Debug\TimeoutBeater.pdb
